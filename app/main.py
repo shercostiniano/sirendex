@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import math
 import os
 from concurrent.futures import ThreadPoolExecutor
@@ -34,6 +35,17 @@ app.mount("/static", StaticFiles(directory=ROOT / "static"), name="static")
 
 def configured(name: str) -> bool:
     return bool(os.getenv(name, "").strip())
+
+
+def _live_snapshot(area: str, days: int) -> list[dict]:
+    try:
+        payload = json.loads((ROOT / "live_snapshot.json").read_text())
+    except (OSError, json.JSONDecodeError):
+        return []
+    if area.split(",", 1)[0].strip().lower() != payload.get("area", "").split(",", 1)[0].strip().lower():
+        return []
+    snapshot = payload.get("snapshots", {}).get(str(days), {})
+    return [dict(item) for item in snapshot.get("incidents", [])]
 
 
 DEMO_INCIDENTS = [
@@ -180,6 +192,7 @@ def incidents(
     mode = os.getenv("APP_MODE", "fixture")
     key = os.getenv("TAVILY_API_KEY", "").strip()
     center = _area_center(area)
+    snapshot_used = False
 
     if mode == "fixture" or not key:
         rows = [dict(item) for item in DEMO_INCIDENTS]
@@ -232,6 +245,9 @@ def incidents(
                 }
             )
         fixture = False
+        if not rows:
+            rows = _live_snapshot(area, days)
+            snapshot_used = bool(rows)
 
     normalized = []
     for row in rows:
@@ -244,7 +260,7 @@ def incidents(
     daytona_status = "skipped"
     checked_count = 0
     verified_count = 0
-    if not fixture and configured("DAYTONA_API_KEY") and normalized:
+    if not fixture and not snapshot_used and configured("DAYTONA_API_KEY") and normalized:
         checks = verify_source_urls([item["source_url"] for item in normalized[:5]])
         checked_count = len(checks)
         by_url = {check.get("url"): check for check in checks}
@@ -270,7 +286,10 @@ def incidents(
         "incidents": normalized,
         "fixture": fixture,
         "partners": {
-            "tavily": {"status": "fixture" if fixture else "live", "reports": len(normalized)},
+            "tavily": {
+                "status": "fixture" if fixture else ("snapshot" if snapshot_used else "live"),
+                "reports": len(normalized),
+            },
             "daytona": {
                 "status": daytona_status,
                 "checked_sources": checked_count,

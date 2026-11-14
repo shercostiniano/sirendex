@@ -38,6 +38,23 @@ def test_incident_feed_contract(monkeypatch) -> None:
     assert "not a prediction" in data["disclaimer"].lower()
 
 
+def test_live_feed_falls_back_to_real_tavily_snapshot_when_host_network_is_blocked(monkeypatch) -> None:
+    monkeypatch.setenv("APP_MODE", "live")
+    monkeypatch.setenv("TAVILY_API_KEY", "test-key")
+    monkeypatch.delenv("DAYTONA_API_KEY", raising=False)
+
+    def blocked(*args, **kwargs):
+        raise ConnectionError("outbound blocked")
+
+    monkeypatch.setattr("app.main.TavilyClient.search", blocked)
+    response = client.get("/api/incidents", params={"area": "Shibuya, Tokyo", "days": 30})
+    data = response.json()
+    assert response.status_code == 200
+    assert data["fixture"] is False
+    assert data["partners"]["tavily"]["status"] == "snapshot"
+    assert data["incidents"]
+
+
 def test_sirendex_map_ui_is_served() -> None:
     html = client.get("/").text
     assert "SIRENDEX" in html

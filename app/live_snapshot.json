@@ -1,0 +1,249 @@
+{
+  "area": "Shibuya, Tokyo",
+  "snapshots": {
+    "1": {
+      "area": "Shibuya, Tokyo",
+      "days": 1,
+      "center": {
+        "lat": 35.6637109,
+        "lng": 139.6976941
+      },
+      "activity": {
+        "score": 16,
+        "label": "LOW",
+        "name": "Incident Activity Index",
+        "explanation": "Category-weighted count of matching public reports in the selected window; not a crime rate."
+      },
+      "incidents": [
+        {
+          "title": "Tokyo hit by surge in heists orchestrated by Aichi-based crime rings - TokyoReporter",
+          "category": "burglary",
+          "summary": "The suspects are currently accused of breaking into a luxury apartment complex in Shibuya Ward this past May, where they allegedly stole heated tobacco products and other valuables. During the investigation, police discovered photos of high-end vehicles parked across Tokyo on the suspects’ smartphones, which investigators believe were being scouted as future targets. Tokyo police are now working to determine if the d",
+          "source_url": "https://www.tokyoreporter.com/japan-news/tokyo-hit-by-surge-in-heists-orchestrated-by-aichi-based-crime-rings",
+          "source_name": "tokyoreporter.com",
+          "source_type": "news",
+          "age_days": 0,
+          "lat": 35.669456,
+          "lng": 139.714027,
+          "id": "0dc8bd5ba29a",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        }
+      ],
+      "fixture": false,
+      "partners": {
+        "tavily": {
+          "status": "live",
+          "reports": 1
+        },
+        "daytona": {
+          "status": "skipped",
+          "checked_sources": 0,
+          "reachable_sources": 0
+        }
+      },
+      "refreshed_at": "2026-11-14T08:06:56.141404+00:00",
+      "disclaimer": "Public web reports may be incomplete or inaccurate. Map markers are area-level approximations, not exact incident locations. This index is not a prediction of danger."
+    },
+    "7": {
+      "area": "Shibuya, Tokyo",
+      "days": 7,
+      "center": {
+        "lat": 35.6637109,
+        "lng": 139.6976941
+      },
+      "activity": {
+        "score": 52,
+        "label": "ELEVATED",
+        "name": "Incident Activity Index",
+        "explanation": "Category-weighted count of matching public reports in the selected window; not a crime rate."
+      },
+      "incidents": [
+        {
+          "title": "Tokyo hit by surge in heists orchestrated by Aichi-based crime rings - TokyoReporter",
+          "category": "burglary",
+          "summary": "The suspects are currently accused of breaking into a luxury apartment complex in Shibuya Ward this past May, where they allegedly stole heated tobacco products and other valuables. During the investigation, police discovered photos of high-end vehicles parked across Tokyo on the suspects’ smartphones, which investigators believe were being scouted as future targets. Tokyo police are now working to determine if the d",
+          "source_url": "https://www.tokyoreporter.com/japan-news/tokyo-hit-by-surge-in-heists-orchestrated-by-aichi-based-crime-rings",
+          "source_name": "tokyoreporter.com",
+          "source_type": "news",
+          "age_days": 0,
+          "lat": 35.669456,
+          "lng": 139.714027,
+          "id": "0dc8bd5ba29a",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        },
+        {
+          "title": "渋谷スクランブル交差点 火災　ダンボール | TikTok",
+          "category": "fire",
+          "summary": "渋谷スクランブル交差点で放火 2026年4月3日(金)21時頃 週末で賑わうスクランブル交差点。 ダンボールを持った男が ガソリンのような液体をまき ライターで火をつけるという事件が起きました。 男はXで犯行を予告していて 実行していたようです 私は昨夜19時くらいにスクランブル交差点付近にいましたが駅周辺に警察官がいつもよりたくさんいたのが気になっていましたが関係しているんでしょうか？ 放火後すぐに 警察官や消防隊によって火は消されたようで幸い怪我人も出なかったそうです。 犯人もすぐに自ら出頭したそうで 日本国籍の50代の男性だそうです 模倣犯がでないといいですね #渋谷 #shibuyacrossing #shibuya Image 2 渋谷NEWS12K Image 3: 49 Likes, 2 Comments. TikTok video from ブッキーマウスは詐欺してる (@panntarou): \"【速報】渋谷ス",
+          "source_url": "https://www.tiktok.com/discover/%E6%B8%8B%E8%B0%B7%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%96%E3%83%AB%E4%BA%A4%E5%B7%AE%E7%82%B9-%E7%81%AB%E7%81%BD%E3%80%80%E3%83%80%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%AB",
+          "source_name": "tiktok.com",
+          "source_type": "social",
+          "age_days": 0,
+          "lat": 35.682814,
+          "lng": 139.695386,
+          "id": "44e6d8c4f7af",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        },
+        {
+          "title": "Fire Truck Dispatched to Shibuya Wanko Soba Restaurant During Live Stream Due to Nuisance Call, Affecting Business; Restaurant \"Considering Legal Action\" | ASCII.jp English Edition",
+          "category": "fire",
+          "summary": "Wanko Soba Hachiko, a Wanko Soba restaurant in Shibuya, Tokyo, announced on November 7 that its business was affected after calls were made to the fire department and police during a live stream inside the restaurant. The establishment stated it would investigate the details and circumstances of the calls and is considering legal action, including filing a police report. On the same day, members of the group \"Yukicke",
+          "source_url": "https://ascii.jp/en/elem/000/004/449/4449708",
+          "source_name": "ascii.jp",
+          "source_type": "news",
+          "age_days": 0,
+          "lat": 35.644303,
+          "lng": 139.6909,
+          "id": "b247eb8ee535",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        },
+        {
+          "title": "Filipino driver in coma after alleged assault in Hong Kong",
+          "category": "assault",
+          "summary": "This is a breaking news report about a fatal incident in Shibuya Ward, Tokyo. Two 22-year-old Filipino men, Garrard John David and Kei Okuma, were arrested",
+          "source_url": "https://www.facebook.com/rjhane.asia.arizala/posts/sakit-isipin-na-kapwa-moe-filipino-ang-magpapahamak-sa-iyohumarap-sa-korte-niton/1121527920721605",
+          "source_name": "facebook.com",
+          "source_type": "social",
+          "age_days": 0,
+          "lat": 35.656689,
+          "lng": 139.708532,
+          "id": "e8937ec6455e",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        }
+      ],
+      "fixture": false,
+      "partners": {
+        "tavily": {
+          "status": "live",
+          "reports": 4
+        },
+        "daytona": {
+          "status": "skipped",
+          "checked_sources": 0,
+          "reachable_sources": 0
+        }
+      },
+      "refreshed_at": "2026-11-14T08:07:01.503515+00:00",
+      "disclaimer": "Public web reports may be incomplete or inaccurate. Map markers are area-level approximations, not exact incident locations. This index is not a prediction of danger."
+    },
+    "30": {
+      "area": "Shibuya, Tokyo",
+      "days": 30,
+      "center": {
+        "lat": 35.6637109,
+        "lng": 139.6976941
+      },
+      "activity": {
+        "score": 96,
+        "label": "HIGH",
+        "name": "Incident Activity Index",
+        "explanation": "Category-weighted count of matching public reports in the selected window; not a crime rate."
+      },
+      "incidents": [
+        {
+          "title": "Tokyo authorities arrested a 16-year-old girl for allegedly ...",
+          "category": "assault",
+          "summary": "Police in Tokyo's Shibuya ward have arrested a 15- year-old girl for stabbing a mother and daughter as “practice” for killing her own mother and younger brother",
+          "source_url": "https://www.facebook.com/TheJapanNews/posts/tokyo-authorities-arrested-a-16-year-old-girl-for-allegedly-stabbing-another-16-/1129661629419656",
+          "source_name": "facebook.com",
+          "source_type": "social",
+          "age_days": 0,
+          "lat": 35.653525,
+          "lng": 139.701325,
+          "id": "cdf360e6c70d",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        },
+        {
+          "title": "Murder of Shinzo Abe - NamuWiki",
+          "category": "murder",
+          "summary": "Murder Case ? (1959) · Tokyo Stabbing Incident AY (1960) · The Sugimura Sadame Incident C (1960) · The Navari Poisoned Wine Incident ? (1961) · Himeshima Lynching Case (1962) · Yoshinobu Kidnapping and Murder Case KL (1963) · Sayama Incident KLS (1963) · Akira Nishiguchi Case C (1963) · Sendai 5-year-old boy kidnapping and murder case KL (1964) · Shibuya Shootout Y (1965) · Hakamada Incident FR ? (1966) · Maruyo Wire",
+          "source_url": "https://en.namu.wiki/w/%EC%95%84%EB%B2%A0%20%EC%8B%A0%EC%A1%B0%20%ED%94%BC%EC%82%B4%20%EC%82%AC%EA%B1%B4",
+          "source_name": "en.namu.wiki",
+          "source_type": "news",
+          "age_days": 0,
+          "lat": 35.655224,
+          "lng": 139.713877,
+          "id": "ec51cb00b8de",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        },
+        {
+          "title": "Foreigners Living In Japan 日本に住む外国人 | A 23-year-old Chinese woman, identified as Shen Sijun, has been arrested in Tokyo on suspicion of stealing ¥15,000 in cash and a security key from a ... | Facebook",
+          "category": "burglary",
+          "summary": "She arrived in Japan in August on a short-term stay and had been living in Shibuya Ward. She has reportedly remained silent during police questioning, while investigators examine whether she was involved in around a dozen similar theft cases reported at other gym locations. Image 1: May be an image of text Image 2 Image 3 Image 4 All reactions: 30 23 comments 1 share Like Comment Share Most relevant []( Saif Ullah Ba",
+          "source_url": "https://www.facebook.com/groups/1787554141308655/posts/29306306355673396",
+          "source_name": "facebook.com",
+          "source_type": "social",
+          "age_days": 0,
+          "lat": 35.660474,
+          "lng": 139.707196,
+          "id": "f29e55e04af8",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        },
+        {
+          "title": "What Happened in Shibuya Halloween 2026 After Drinking ...",
+          "category": "fire",
+          "summary": "This news report documents an arson incident at Shibuya Crossing in Tokyo. Security camera footage shows a man setting a fire in the middle of the crowded",
+          "source_url": "https://www.facebook.com/andre.d.cunningham/videos/what-happened-in-shibuya-they-tried-to-stop-drinking-in-shibuya-for-halloween-20/1775418670359019",
+          "source_name": "facebook.com",
+          "source_type": "social",
+          "age_days": 0,
+          "lat": 35.647608,
+          "lng": 139.694585,
+          "id": "b83ab05b7e1d",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        },
+        {
+          "title": "Shibuya Fire Incident Explained",
+          "category": "fire",
+          "summary": "A shocking incident unfolded at Tokyo's iconic Shibuya Scramble Crossing on April 3, where a man in his 50s set fire to the intersection, causing panic among",
+          "source_url": "https://www.tiktok.com/discover/shibuya-fire-incident-explained",
+          "source_name": "tiktok.com",
+          "source_type": "social",
+          "age_days": 0,
+          "lat": 35.648469,
+          "lng": 139.699883,
+          "id": "c5cfa21a3c46",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        },
+        {
+          "title": "Fire Truck Dispatched to Shibuya Wanko Soba Restaurant During Live Stream Due to Nuisance Call, Affecting Business; Restaurant \"Considering Legal Action\" | ASCII.jp English Edition",
+          "category": "fire",
+          "summary": "Wanko Soba Hachiko, a Wanko Soba restaurant in Shibuya, Tokyo, announced on November 7 that its business was affected after calls were made to the fire department and police during a live stream inside the restaurant. The establishment stated it would investigate the details and circumstances of the calls and is considering legal action, including filing a police report. On the same day, members of the group \"Yukicke",
+          "source_url": "https://ascii.jp/en/elem/000/004/449/4449708",
+          "source_name": "ascii.jp",
+          "source_type": "news",
+          "age_days": 0,
+          "lat": 35.644303,
+          "lng": 139.6909,
+          "id": "b247eb8ee535",
+          "location_accuracy": "area-level approximation",
+          "source_verified": false
+        }
+      ],
+      "fixture": false,
+      "partners": {
+        "tavily": {
+          "status": "live",
+          "reports": 6
+        },
+        "daytona": {
+          "status": "skipped",
+          "checked_sources": 0,
+          "reachable_sources": 0
+        }
+      },
+      "refreshed_at": "2026-11-14T08:06:26.661537+00:00",
+      "disclaimer": "Public web reports may be incomplete or inaccurate. Map markers are area-level approximations, not exact incident locations. This index is not a prediction of danger."
+    }
+  }
+}
