@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Agent Forge — Ready</title>
+  <style>
+    :root{font-family:Inter,system-ui,sans-serif;color:#f4f4f2;background:#0b0c0d}body{max-width:900px;margin:0 auto;padding:48px 22px}h1{font-size:clamp(42px,8vw,88px);line-height:.95;margin:12px 0}.muted{color:#999}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:32px 0}.card{border:1px solid #333;border-radius:14px;padding:18px;background:#121416}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#e05454;margin-right:8px}.on .dot{background:#59d987}form{display:flex;gap:8px}input{flex:1;padding:14px;background:#161819;color:white;border:1px solid #444;border-radius:10px}button{padding:14px 18px;background:#f1f253;border:0;border-radius:10px;font-weight:800}pre{white-space:pre-wrap;padding:18px;background:#121416;border-radius:14px;min-height:80px}</style>
+</head>
+<body>
+  <p class="muted">AGENT FORGE · TWO-HOUR MODE</p><h1>Infrastructure ready.<br>Build the moment.</h1>
+  <p class="muted">Offline-first starter. Add sponsor keys only after the core demo works.</p>
+  <div id="partners" class="grid"></div>
+  <form id="search"><input id="q" value="latest AI agent news" aria-label="Search query"><button>Search Tavily</button></form>
+  <pre id="out">Waiting.</pre>
+<script>
+const out=document.querySelector('#out');
+fetch('/api/partners').then(r=>r.json()).then(x=>{document.querySelector('#partners').innerHTML=Object.entries(x).map(([k,v])=>`<div class="card ${v?'on':''}"><span class="dot"></span><b>${k}</b><br><span class="muted">${v?'ready':'not configured'}</span></div>`).join('')});
+document.querySelector('#search').onsubmit=async e=>{e.preventDefault();out.textContent='Searching…';const r=await fetch('/api/search?q='+encodeURIComponent(document.querySelector('#q').value));out.textContent=JSON.stringify(await r.json(),null,2)};
+</script></body></html>
