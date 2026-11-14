@@ -1,4 +1,4 @@
-# SirenDex — SpiderDex Live Incident Map
+# SirenDex — Live Incident Map
 
 SirenDex monitors recent public incident reports around a selected area and displays them through the SpiderDex map UI.
 
